@@ -1,7 +1,6 @@
 {
     "Source": [
         {
-            "id": 1,
             "name": "Nadeshiko",
             "label": "ggy",
             "videoid": "gX5_o20FI3A",
@@ -9,7 +8,6 @@
             "end": 97
         },
         {
-            "id": 2,
             "name": "Maya",
             "label": "Hello, Everybody! マヤたそこと、一文字マヤで〜す〜",
             "videoid": "P8V0fM3h1Vo",
@@ -17,7 +15,6 @@
             "end": 56
         },
         {
-            "id": 3,
             "name": "Hinaka",
             "label": "Just Do It!",
             "videoid": "ypWXg_FNzSU",
@@ -25,7 +22,6 @@
             "end": 19
         },
         {
-            "id": 4,
             "name": "Hinaka",
             "label": "Make your dreams come true!",
             "videoid": "ypWXg_FNzSU",
@@ -33,7 +29,6 @@
             "end": 33
         },
         {
-            "id": 5,
             "name": "Hinaka",
             "label": "zzz",
             "videoid": "OttYxoEVPXo",
@@ -41,7 +36,6 @@
             "end": 108
         },
         {
-            "id": 6,
             "name": "Hinaka",
             "label": "あざーす",
             "videoid": "8G6bOTRJnfI",
@@ -57,7 +51,6 @@
             "end": 197
         },
         {
-            "id": 8,
             "name": "Yukino",
             "label": "アセンション！",
             "videoid": "8YPSAQFsoLY",
@@ -65,7 +58,6 @@
             "end": 814
         },
         {
-            "id": 9,
             "name": "Aoi",
             "label": "アットマーク、みずしなアンダーバー、あ、お〜い",
             "videoid": "v8cI9R9di7w",
@@ -73,7 +65,6 @@
             "end": 1261
         },
         {
-            "id": 10,
             "name": "Hinaka",
             "label": "あなたの〜こころを〜ポカポカに　星菜日向夏で〜す",
             "videoid": "gg6AS7G-OtA",
@@ -81,7 +72,6 @@
             "end": 79
         },
         {
-            "id": 11,
             "name": "Nekuto",
             "label": "あんこやないかい！",
             "videoid": "SBdBAQOW6Vk",
@@ -89,7 +79,6 @@
             "end": 1306
         },
         {
-            "id": 12,
             "name": "Hinaka",
             "label": "いつもだよ〜",
             "videoid": "td7LDyFG4Zk",
@@ -97,7 +86,6 @@
             "end": 1340
         },
         {
-            "id": 13,
             "name": "Hinaka",
             "label": "オ゛イ！",
             "videoid": "td7LDyFG4Zk",
@@ -105,7 +93,6 @@
             "end": 1939
         },
         {
-            "id": 14,
             "name": "Shizuku",
             "label": "おつポーン",
             "videoid": "XH4lKksPkNM",
@@ -113,7 +100,6 @@
             "end": 69
         },
         {
-            "id": 15,
             "name": "Reika",
             "label": "おハーブ〜有栖川レイカで〜す",
             "videoid": "dD0ghXa2aSk",
@@ -121,7 +107,6 @@
             "end": 71
         },
         {
-            "id": 16,
             "name": "Hinaka",
             "label": "ごめんなちゃい",
             "videoid": "ItctN0X-318",
@@ -129,7 +114,6 @@
             "end": 77
         },
         {
-            "id": 17,
             "name": "Uta",
             "label": "こんばんそーい　珠根うたで〜す",
             "videoid": "SD1pF9A4b8g",
@@ -137,7 +121,6 @@
             "end": 105
         },
         {
-            "id": 18,
             "name": "Hinaka",
             "label": "それな",
             "videoid": "8G6bOTRJnfI",
@@ -145,7 +128,6 @@
             "end": 902
         },
         {
-            "id": 19,
             "name": "Hinaka",
             "label": "ちゅき",
             "videoid": "8G6bOTRJnfI",
@@ -153,7 +135,6 @@
             "end": 1324
         },
         {
-            "id": 20,
             "name": "Yuzuki",
             "label": "テンションさげだわ〜からの、あげ〜",
             "videoid": "eQQFJcXMn5o",
@@ -161,7 +142,6 @@
             "end": 373
         },
         {
-            "id": 21,
             "name": "Nene",
             "label": "やほんぬやほんぬ〜",
             "videoid": "ViCtyGTuDCg",
@@ -169,7 +149,6 @@
             "end": 41
         },
         {
-            "id": 22,
             "name": "Hinaka",
             "label": "ワロタス",
             "videoid": "ItctN0X-318",
@@ -177,7 +156,6 @@
             "end": 1344
         },
         {
-            "id": 23,
             "name": "Hinaka",
             "label": "今年も来た17歳〜永遠に続く17歳〜気持ちは3歳〜♪",
             "videoid": "ItctN0X-318",
@@ -185,12 +163,137 @@
             "end": 773
         },
         {
-            "id": 24,
             "name": "Mikoto",
             "label": "膝、が、かゆい",
             "videoid": "555NfF9pTqY",
             "start": 323,
             "end": 326
+        },
+        {
+            "name": "Aoi",
+            "label": "ほんならな。ばいにゃん",
+            "videoid": "6qtdkp4MB4Q",
+            "start": 58,
+            "end": 62
+        },
+        {
+            "name": "Aoi",
+            "label": "あんこ好きやねん",
+            "videoid": "6qtdkp4MB4Q",
+            "start": 32,
+            "end": 35
+        },
+        {
+            "name": "Aoi",
+            "label": "まいどや",
+            "videoid": "ILraEn35BXA",
+            "start": 310,
+            "end": 316
+        },
+        {
+            "name": "Aoi",
+            "label": "あんこが好きや",
+            "videoid": "ILraEn35BXA",
+            "start": 491,
+            "end": 495
+        },
+        {
+            "name": "Aoi",
+            "label": "せや、、あんこ",
+            "videoid": "ILraEn35BXA",
+            "start": 501,
+            "end": 503
+        },
+        {
+            "name": "Aoi",
+            "label": "あ～んら～～",
+            "videoid": "ILraEn35BXA",
+            "start": 587,
+            "end": 589
+        },
+        {
+            "name": "Aoi",
+            "label": "食べたことないとか、もったいないぞ～",
+            "videoid": "ILraEn35BXA",
+            "start": 591,
+            "end": 595
+        },
+        {
+            "name": "Aoi",
+            "label": "ふぇあ",
+            "videoid": "ILraEn35BXA",
+            "start": 644,
+            "end": 645
+        },
+        {
+            "name": "Aoi",
+            "label": "よいちょ",
+            "videoid": "ILraEn35BXA",
+            "start": 693,
+            "end": 695
+        },
+        {
+            "name": "Aoi",
+            "label": "待っとって",
+            "videoid": "ILraEn35BXA",
+            "start": 930,
+            "end": 932
+        },
+        {
+            "name": "Aoi",
+            "label": "やったぜ",
+            "videoid": "ILraEn35BXA",
+            "start": 992,
+            "end": 994
+        },
+        {
+            "name": "Aoi",
+            "label": "草、草、草",
+            "videoid": "ILraEn35BXA",
+            "start": 2073,
+            "end": 2079
+        },
+        {
+            "name": "Aoi",
+            "label": "よっこいしょ",
+            "videoid": "3ggXo0NSV7A",
+            "start": 37,
+            "end": 40
+        },
+        {
+            "name": "Aoi",
+            "label": "セブレって言うねん",
+            "videoid": "3ggXo0NSV7A",
+            "start": 326,
+            "end": 329
+        },
+        {
+            "name": "Aoi",
+            "label": "見てw イヒヒw おいしょ",
+            "videoid": "3ggXo0NSV7A",
+            "start": 514,
+            "end": 517
+        },
+        {
+            "name": "Aoi",
+            "label": "めw ざw しwww",
+            "videoid": "3ggXo0NSV7A",
+            "start": 519,
+            "end": 524
+        },
+        {
+            "name": "Aoi",
+            "label": "うぇ～い",
+            "videoid": "3ggXo0NSV7A",
+            "start": 598,
+            "end": 603
+        },
+        {
+            "name": "Aoi",
+            "label": "い～や～じゃ んふふ",
+            "videoid": "3ggXo0NSV7A",
+            "start": 651,
+            "end": 657
         }
     ]
 }
