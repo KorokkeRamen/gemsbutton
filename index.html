@@ -57,14 +57,8 @@
         props: ['members'],
         methods: {
             selected: function (e) {
-                vm.buttons = [];
                 var selected = e.target.value;
-                for (let i in vm.sources) {
-                    var video = vm.sources[i];
-                    if (video.name === selected) {
-                        vm.buttons.push(video);
-                    }
-                }
+                vm.switch(selected);
             }
         },
         template:
@@ -82,7 +76,7 @@
                     'videoId': this.button.videoid,
                     'startSeconds': this.button.start,
                     'endSeconds': this.button.end,
-                    'suggestedQuality': 'large'
+                    'suggestedQuality': 'medium'
                 });
             }
         },
@@ -95,6 +89,11 @@
         player = new YT.Player('player');
         axios.get('source.json').then(function (response) {
             vm.sources = response.data.Source;
+            vm.sources.sort(function(a, b){
+                if(a.label < b.label) { return -1; }
+                if(a.label > b.label) { return 1; }
+                return 0;
+            });
         });
     }
 
@@ -159,6 +158,17 @@
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        },
+        methods: {
+            switch: function (name) {
+                this.buttons = [];
+                for (let i in this.sources) {
+                    var video = this.sources[i];
+                    if (video.name === name) {
+                        this.buttons.push(video);
+                    }
+                }
+            }
         }
     });
 </script>
