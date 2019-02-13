@@ -1,8 +1,7 @@
 const Home = {
-    props: ['sources'],
+    props: ['sources', 'updated'],
     data: function() {
         return {
-            lastUpdated: '2018-02-12',
             members: [
                 {
                     name: 'うた',
@@ -111,7 +110,7 @@ const Home = {
             <div class="row">
                 <div class="col">
                     <small>Inspired by <a href="http://sanabutton.ojaru.jp/" target="_blank">さなボタン</a> | <a
-                            href="https://gemscompany.jp/" target="_blank">GEMS COMPANY</a> | Last updated at {{ lastUpdated }}
+                            href="https://gemscompany.jp/" target="_blank">GEMS COMPANY Official</a> | Last updated at {{ updated }}
                     </small>
                 </div>
             </div>
@@ -167,6 +166,7 @@ var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player');
     $.getJSON('source.json', function (response) {
+        vm.lastUpdated = response.lastUpdated;
         vm.sources = response.Source;
         vm.sources.sort(function(a, b){
             if(a.label < b.label) { return -1; }
@@ -179,9 +179,10 @@ function onYouTubeIframeAPIReady() {
 var vm = new Vue({
     router,
     data: {
+        lastUpdated: '',
         sources: []
     },
     template: '<div id="app">' +
-        '<router-view :sources="sources"></router-view>' +
+        '<router-view :sources="sources" :updated="lastUpdated"></router-view>' +
         '</div>'
 }).$mount('#app');
