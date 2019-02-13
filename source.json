@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2018-02-12",
+    "lastUpdated": "2018-02-14",
     "Source": [
         {
             "name": "Nadeshiko",
@@ -186,7 +186,7 @@
         },
         {
             "name": "Aoi",
-            "label": "まいどや",
+            "label": "みんな、まいどや",
             "videoid": "ILraEn35BXA",
             "start": 310,
             "end": 316
@@ -291,10 +291,115 @@
         },
         {
             "name": "Aoi",
-            "label": "い～や～じゃ んふふ",
+            "label": "い～や～じゃ これはあえしのやぞ",
             "videoid": "3ggXo0NSV7A",
             "start": 651,
             "end": 657
+        },
+        {
+            "name": "Aoi",
+            "label": "まいど〜",
+            "videoid": "itBRjPy-ApY",
+            "start": 60,
+            "end": 68
+        },
+        {
+            "name": "Aoi",
+            "label": "へぁ",
+            "videoid": "itBRjPy-ApY",
+            "start": 482,
+            "end": 484
+        },
+        {
+            "name": "Aoi",
+            "label": "あえし、知らん",
+            "videoid": "itBRjPy-ApY",
+            "start": 626,
+            "end": 627
+        },
+        {
+            "name": "Aoi",
+            "label": "えあ、ってあえし言ってへんで",
+            "videoid": "itBRjPy-ApY",
+            "start": 732,
+            "end": 740
+        },
+        {
+            "name": "Aoi",
+            "label": "ふに",
+            "videoid": "itBRjPy-ApY",
+            "start": 793,
+            "end": 795
+        },
+        {
+            "name": "Aoi",
+            "label": "ばいにゃーん",
+            "videoid": "itBRjPy-ApY",
+            "start": 2038,
+            "end": 2041
+        },
+        {
+            "name": "Aoi",
+            "label": "こんばんみずしー",
+            "videoid": "AcKfjCanJKs",
+            "start": 33,
+            "end": 40
+        },
+        {
+            "name": "Aoi",
+            "label": "へぁ",
+            "videoid": "AcKfjCanJKs",
+            "start": 51,
+            "end": 53
+        },
+        {
+            "name": "Aoi",
+            "label": "おなかすいてきた",
+            "videoid": "AcKfjCanJKs",
+            "start": 663,
+            "end": 666
+        },
+        {
+            "name": "Aoi",
+            "label": "シンキングターイム てってってってって",
+            "videoid": "AcKfjCanJKs",
+            "start": 903,
+            "end": 915
+        },
+        {
+            "name": "Aoi",
+            "label": "どーやすごいやろ",
+            "videoid": "AcKfjCanJKs",
+            "start": 977,
+            "end": 982
+        },
+        {
+            "name": "Hinaka",
+            "label": "イッパイタベテヨカタネ〜アリガトネ〜",
+            "videoid": "gqhv3ErwJXM",
+            "start": 810,
+            "end": 813
+        },
+        {
+            "name": "Uta",
+            "label": "どーん",
+            "videoid": "SD1pF9A4b8g",
+            "start": 993,
+            "end": 994
+        },
+        {
+            "name": "Uta",
+            "label": "ウフフッ",
+            "videoid": "SD1pF9A4b8g",
+            "start": 1194,
+            "end": 1196
+        },
+        {
+            "name": "Reika",
+            "label": "世界が360度変わった",
+            "videoid": "kmjMqN5riwk",
+            "start": 227,
+            "end": 241
         }
     ]
 }
