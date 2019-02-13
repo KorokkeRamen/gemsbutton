@@ -85,13 +85,13 @@ const Home = {
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     },
     template: `
-        <div class="container-fluid pt-4 pb-4">
-            <div class="row mb-4">
-                <div id="app" class="col-md">
-                    <h1>ジェムカンボタン v.1.0b2</h1>
+        <div class="container-fluid pt-2 pb-2">
+            <div class="row mb-2">
+                <div id="app" class="col-md-8">
+                    <h1 class="mt-2">ジェムカンボタン v.1.0</h1>
                     <p>メンバーの何気ない一言を再生して愛でることができるボタンです。<br>
                         勝手に作ってごめんなさい。いつも配信してくれてありがとう。</p>
-                    <div class="btn-group mb-4" role="group">
+                    <div class="btn-group" role="group">
                         <button id="membersDrop" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ selectedMember }}
                         </button>
@@ -99,18 +99,26 @@ const Home = {
                             <router-link v-for="m in members" :key="m.key" :to="{ name: 'member', params: { name: m.key } }" class="dropdown-item" active-class="active">{{ m.name }}</router-link>
                         </div>
                     </div>
-                    <router-view :buttons="buttons"></router-view>
                 </div>
-                <div class="col-md">
+                <div class="col-md-4">
                     <div class="embed-responsive embed-responsive-16by9">
                         <div id="player" class="embed-responsive-item"></div>
                     </div>
                 </div>
             </div>
+            <div class="row mb-5">
+                <div class="col">
+                    <router-view :buttons="buttons"></router-view>
+                </div>
+            </div>
             <div class="row">
                 <div class="col">
-                    <small>Inspired by <a href="http://sanabutton.ojaru.jp/" target="_blank">さなボタン</a> | <a
-                            href="https://gemscompany.jp/" target="_blank">GEMS COMPANY Official</a> | Last updated at {{ updated }}
+                    <small>
+                        Inspired by <a href="http://sanabutton.ojaru.jp/" target="_blank">さなボタン</a> |
+                        Developed with ♡ by <a href="https://twitter.com/KorokkeRamen" target="_blank">@KorokkeRamen</a> |
+                        Supported by <a href="https://twitter.com/shira_vr" target="_blank">@shira_vr</a> |
+                        <a href="https://gemscompany.jp/" target="_blank">GEMS COMPANY Official</a> |
+                        Last updated at {{ updated }}
                     </small>
                 </div>
             </div>
