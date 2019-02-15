@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2018-02-14",
+    "lastUpdated": "2018-02-16",
     "Source": [
         {
             "name": "Nadeshiko",
@@ -400,6 +400,13 @@
             "videoid": "kmjMqN5riwk",
             "start": 227,
             "end": 241
+        },
+        {
+            "name": "Reika",
+            "label": "セイ！",
+            "videoid": "xDUwD3Hm8C4",
+            "start": 56,
+            "end": 59
         }
     ]
 }
