@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2018-02-16",
+    "lastUpdated": "2018-02-22",
     "Source": [
         {
             "name": "Nadeshiko",
@@ -407,6 +407,20 @@
             "videoid": "xDUwD3Hm8C4",
             "start": 56,
             "end": 59
+        },
+        {
+            "name": "Nene",
+            "label": "一発入魂本気の堕天使、奈日抽ねねです",
+            "videoid": "5Q_SC6KocM8",
+            "start": 295,
+            "end": 305
+        },
+        {
+            "name": "Yuzuki",
+            "label": "うーたんとwww あおいちゃんがwwww はwだwいwろwだwwww"
+            "videoid": "EnEI7Y0sBxU",
+            "start": 1099,
+            "end": 1109
         }
     ]
 }
