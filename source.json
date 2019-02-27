@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2018-02-22",
+    "lastUpdated": "2018-02-28",
     "Source": [
         {
             "name": "Nadeshiko",
@@ -428,6 +428,27 @@
             "videoid": "ODUQ31J7q3k",
             "start": 44,
             "end": 55
+        },
+        {
+            "name": "Nadeshiko",
+            "label": "ツンデレかぁ〜？",
+            "videoid": "t8w5ObXxEpU",
+            "start": 49,
+            "end": 53
+        },
+        {
+            "name": "Yuzuki",
+            "label": "キシャオンシャー",
+            "videoid": "t8w5ObXxEpU",
+            "start": 398,
+            "end": 401
+        },
+        {
+            "name": "Uta",
+            "label": "そい。そい。そーい",
+            "videoid": "DZvmwIzZHhA",
+            "start": 1822,
+            "end": 1835
         }
     ]
 }
