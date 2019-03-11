@@ -1,5 +1,5 @@
 {
-    "lastUpdated": "2018-03-01",
+    "lastUpdated": "2018-03-10",
     "Source": [
         {
             "name": "Nadeshiko",
@@ -451,6 +451,25 @@
             "end": 1835
         },
         {
+            "name": "Yuzuki",
+            "label": "ふんふん",
+            "videoid": "SmcZ-LQ_T6g",
+            "start": 266,
+            "end": 267
+        },
+        {
+            "name": "Yuzuki",
+            "label": "うまいねっ",
+            "videoid": "SmcZ-LQ_T6g",
+            "start": 1357,
+            "end": 1359
+        },
+        {
+            "name": "Uta",
+            "label": "そーいそいそい、そいそいそ〜い！そいそいそいそいそそそい？そいそいそいい！ｿｲﾔｯ",
+            "videoid": "UKxZ75K9aVs",
+            "start": 1445,
+            "end": 1455
             "name": "Nene",
             "label": "ありがとうございまし、た！",
             "videoid": "5iADOr1GcyY",
