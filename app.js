@@ -130,10 +130,25 @@ const Button = {
     props: ['button'],
     methods: {
         play: function (e) {
+            let startSeconds;
+            let endSeconds;
+
+            startSeconds = this.button.start;
+            if (typeof startSeconds === "string") {
+                startSeconds = startSeconds.split(':');
+                startSeconds = Number(startSeconds[0]) * 60 + Number(startSeconds[1]);
+            }
+
+            endSeconds = this.button.end;
+            if (typeof endSeconds === "string") {
+                endSeconds = endSeconds.split(':');
+                endSeconds = Number(endSeconds[0]) * 60 + Number(endSeconds[1]);
+            }
+
             player.loadVideoById({
                 'videoId': this.button.videoid,
-                'startSeconds': this.button.start,
-                'endSeconds': this.button.end,
+                'startSeconds': startSeconds,
+                'endSeconds': endSeconds,
                 'suggestedQuality': 'medium'
             });
         }
