@@ -172,8 +172,9 @@ const router = new VueRouter({
 var player;
 
 function onYouTubeIframeAPIReady() {
+    var milliseconds = new Date().getTime();
     player = new YT.Player('player');
-    $.getJSON('source.json', function (response) {
+    $.getJSON('source.json?t=' + milliseconds, function (response) {
         vm.lastUpdated = response.lastUpdated;
         vm.sources = response.Source;
         vm.sources.sort(function(a, b){
