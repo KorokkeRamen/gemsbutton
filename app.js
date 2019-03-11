@@ -88,7 +88,7 @@ const Home = {
         <div class="container-fluid pt-2 pb-2">
             <div class="row mb-2">
                 <div id="app" class="col-md-8">
-                    <h1 class="mt-2">ジェムカンボタン v.1.0</h1>
+                    <h1 class="mt-2">ジェムカンボタン v.1.1</h1>
                     <p>メンバーの何気ない一言を再生して愛でることができるボタンです。<br>
                         勝手に作ってごめんなさい。いつも配信してくれてありがとう。</p>
                     <div class="btn-group" role="group">
