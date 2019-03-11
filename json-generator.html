@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ジェムカンボタン Json作成ツール</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+</head>
+<body>
+<div class="container pt-2 pb-2">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group row">
+                <label for="videourl" class="col-sm-2 col-form-label">ビデオURL</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="videourl" name="videourl" placeholder="https://www.youtube.com/watch?v=yyvAcuwWvdQ">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="label" class="col-sm-2 col-form-label">ボタンラベル</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="label" name="label">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="start" class="col-sm-2 col-form-label">再生開始時間</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="start" name="start" placeholder="5:01">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="end" class="col-sm-2 col-form-label">再生終了時間</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="end" name="end" placeholder="12:34">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">メンバー名</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="name" name="name">
+                        <option value="Uta">うた</option>
+                        <option value="Hinaka">ひなか</option>
+                        <option value="Nene">ねね</option>
+                        <option value="Reika">れいか</option>
+                        <option value="Shizuku">しずく</option>
+                        <option value="Mikoto">みこと</option>
+                        <option value="Yuzuki">ゆずき</option>
+                        <option value="Aoi">あおい</option>
+                        <option value="Yukino">ゆきの</option>
+                        <option value="Maya">まや</option>
+                        <option value="Nadeshiko">なでしこ</option>
+                        <option value="Nekuto">ねくと</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="json" class="col-sm-2 col-form-label">Json</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="8" id="json" name="json"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-dark mb-4" id="preview">Preview</button>
+            <div class="embed-responsive embed-responsive-16by9">
+                <div id="player" class="embed-responsive-item"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+        crossorigin="anonymous"></script>
+<script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var player;
+
+    function youtubeParser(url){
+        var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+        var match = url.match(regExp);
+        return (match&&match[7].length==11)? match[7] : false;
+    }
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player');
+        $('#preview').on('click', function () {
+            let startSeconds;
+            let endSeconds;
+            let videoid;
+            let json;
+
+            startSeconds = $('#start').val();
+            if (typeof startSeconds === "string") {
+                startParsed = startSeconds.split(':');
+                startParsed = Number(startParsed[0]) * 60 + Number(startParsed[1]);
+            }
+
+            endSeconds = $('#end').val();
+            if (typeof endSeconds === "string") {
+                endParsed = endSeconds.split(':');
+                endParsed = Number(endParsed[0]) * 60 + Number(endParsed[1]);
+            }
+
+            videoid = youtubeParser($('#videourl').val());
+
+            player.loadVideoById({
+                'videoId': videoid,
+                'startSeconds': startParsed,
+                'endSeconds': endParsed,
+                'suggestedQuality': 'medium'
+            });
+
+            json = {
+                name: $('#name').val(),
+                label: $('#label').val(),
+                videoid: videoid,
+                start: startParsed,
+                end: endParsed
+            };
+
+            $('#json').val(JSON.stringify(json));
+        });
+    }
+</script>
+</body>
+</html>
